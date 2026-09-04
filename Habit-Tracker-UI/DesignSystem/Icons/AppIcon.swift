@@ -46,4 +46,7 @@ enum AppIcon {
     static let calendar = "calendar"
     static let notification = "bell"
     static let settings = "gearshape"
+    static let flame = "flame.fill"
+    static let progress = "chart.line.uptrend.xyaxis"
+    static let star = "star.fill"
 }

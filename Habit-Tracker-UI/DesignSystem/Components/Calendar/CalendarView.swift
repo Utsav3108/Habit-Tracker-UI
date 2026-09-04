@@ -43,12 +43,12 @@ struct CalendarView: View {
                         .frame(height: 0.5)
 
                     Text(date.day)
-                        .font(.callout)
+                        .font(.caption2)
                         .fontWeight(.medium)
                         .foregroundStyle(date.dayColor)
 
                     Text("\(date.date)")
-                        .font(.title3.bold())
+                        .font(.headline.bold())
                         .foregroundStyle(date.dateColor)
 
                     Image(systemName: date.iconName)
