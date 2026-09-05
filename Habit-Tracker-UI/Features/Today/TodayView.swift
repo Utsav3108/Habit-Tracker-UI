@@ -47,15 +47,7 @@ struct TodayView: View {
             VStack(alignment: .leading, spacing: 20) {
                 
                 // Title
-                VStack(alignment: .leading){
-                    Text("Habit Tracker")
-                        .font(Typography.sectionTitle)
-                        .foregroundStyle(Color(.textPrimary))
-                    
-                    Text("Build better habits, everyday")
-                        .font(Typography.caption)
-                        .foregroundStyle(Color(.textSecondary))
-                }
+                TitleView(title: "Habit Tracker", subtitle: "Build better habits, everyday")
                 
                 // Calendar
                 VStack {
