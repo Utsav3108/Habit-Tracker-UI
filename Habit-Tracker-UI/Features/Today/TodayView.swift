@@ -37,7 +37,7 @@ struct TodayView: View {
         Habit(iconName: AppIcon.water, title: "Drink Water", description: "6 glasses a day", isCompleted: true, color: .blue),
         Habit(iconName: AppIcon.reading, title: "Read", description: "20 min reading", isCompleted: true, color: .purple),
         Habit(iconName: AppIcon.meditation, title: "Meditate", description: "10 min meditation", isCompleted: false, color: .yellow),
-        Habit(iconName: AppIcon.journal, title: "Journal", description: "30 min exercise", isCompleted: false, color: .red),
+        Habit(iconName: AppIcon.journal, title: "Journal", description: "Write your thoughts", isCompleted: false, color: .red),
     ]
     
     
