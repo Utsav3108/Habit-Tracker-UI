@@ -11,15 +11,20 @@ struct StatsFilterView: View {
     
     var color : Color = Color(.primary)
     
+    var showCalendarIcon : Bool = true
+    
     var body: some View {
         HStack {
             
-            Image(systemName: AppIcon.calendar)
-                .font(.system(size: 15, weight: .medium))
-                .foregroundStyle(color)
+            if showCalendarIcon {
+                Image(systemName: AppIcon.calendar)
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundStyle(color)
+            }
+                
             
             Text("This Week")
-                .font(.footnote.bold())
+                .font(.caption.bold())
                 .foregroundStyle(color)
             
             Image(systemName: "chevron.down")
@@ -28,7 +33,6 @@ struct StatsFilterView: View {
             
         }
         
-        .padding()
         .background(
             RoundedRectangle(cornerRadius: Radius.small)
                 .fill(.white)
