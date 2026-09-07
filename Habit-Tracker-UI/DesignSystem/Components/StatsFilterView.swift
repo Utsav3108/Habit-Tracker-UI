@@ -9,9 +9,13 @@ import SwiftUI
 
 struct StatsFilterView: View {
     
+    var text : String
+    
     var color : Color = Color(.primary)
     
     var showCalendarIcon : Bool = true
+    
+    var showDropDownIcon : Bool = true
     
     var body: some View {
         HStack {
@@ -23,12 +27,12 @@ struct StatsFilterView: View {
             }
                 
             
-            Text("This Week")
+            Text(text)
                 .font(.caption.bold())
                 .foregroundStyle(color)
             
-            Image(systemName: "chevron.down")
-                .font(.system(size: 14, weight: .medium))
+            Image(systemName: showDropDownIcon ? "chevron.down" : "chevron.right")
+                .font(.system(size: 12, weight: .medium))
                 .foregroundStyle(color)
             
         }
@@ -42,5 +46,5 @@ struct StatsFilterView: View {
 }
 
 #Preview {
-    StatsFilterView()
+    StatsFilterView(text: "This Week")
 }
